@@ -20,7 +20,17 @@ body {
     height: 100vh;
 }
 
+#articles {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 2em;
+}
+
 #nav-kontener {
+
     float: left;
     display: flex;
     flex-direction: column;
@@ -29,7 +39,6 @@ body {
     padding: 1em;
     width: 15%;
 }
-
 
 #nav-kontener li a {
     color: blue;

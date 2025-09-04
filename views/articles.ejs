@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/articles.css">
+        <title>szerzok</title>
+    </head>
+    <body>
+        <%- include('nav.ejs') %>
+        <div id="articles">
+            <h1>szerzok</h1>
+            <ul>
+                  <% for( let i = 0; i < articles.length; i++ ) { %>
+
+                    <% if (articles[i].statusz) { %>
+                     <li>szerzok neve: <%= articles[i].nev %></li>
+            <li>poszt neve: <%= articles[i].poszt %></li>
+                    <% } %>
+            
+            <% } %>
+            </ul>
+        </div>
+    </body>
+</html>
